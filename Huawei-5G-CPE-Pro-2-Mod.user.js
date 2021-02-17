@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name        Huawei 5G CPE Pro 2 Mod
+// @icon        https://i.imgur.com/OsLkmXp.png
 // @license     GPL version 2 or any later version; http://www.gnu.org/licenses/gpl-2.0.txt
 // @updateURL   https://github.com/iN4sser/Huawei-5G-CPE-Pro-2-Mod/raw/master/Huawei-5G-CPE-Pro-2-Mod.user.js
 // @downloadURL https://github.com/iN4sser/Huawei-5G-CPE-Pro-2-Mod/raw/master/Huawei-5G-CPE-Pro-2-Mod.user.js
-// @namespace   iN4sser
 // @include     *://192.168.*.1/*
-// @version     1.0
+// @version     1.1
 // @author      iN4sser
+// @namespace   iN4sser
 // @grant       GM_addStyle
 // @description This script have been made based on "MiNOoOoON" Thread on Adslgate "https://www.adslgate.com/dsl/showthread.php?t=2611386"
 // ==/UserScript==
