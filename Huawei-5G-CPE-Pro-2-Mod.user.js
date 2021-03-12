@@ -5,50 +5,45 @@
 // @updateURL   https://github.com/iN4sser/Huawei-5G-CPE-Pro-2-Mod/raw/main/Huawei-5G-CPE-Pro-2-Mod.user.js
 // @downloadURL https://github.com/iN4sser/Huawei-5G-CPE-Pro-2-Mod/raw/main/Huawei-5G-CPE-Pro-2-Mod.user.js
 // @include     *://192.168.*.1/*
-// @version     1.2
+// @version     1.3
 // @author      iN4sser
 // @namespace   iN4sser
 // @grant       GM_addStyle
-// @description This script have been made based on "MiNOoOoON" Thread on Adslgate "https://www.adslgate.com/dsl/showthread.php?t=2611386"
+// @description This style is made to unlock some hidden features on the web page
 // ==/UserScript==
-var zNode       = document.createElement ('div');
-zNode.innerHTML = '<button id="myButton" type="button">'
-                + 'Mod!</button>'
-                ;
-zNode.setAttribute ('id', 'myContainer');
-document.body.appendChild (zNode);
-
-document.getElementById ("myButton").addEventListener (
-    "click", ButtonClickAction, false
-);
-
-function ButtonClickAction (zEvent) {
-   var list = $('#dhcp_dns').show();$('#apn_list_input_dns_operate').show();$('#mobilesearch_input_support_4G_switch_operate').show();$('#mobilesearch_network_mode_5G').show();$('#mobilesearch_LTE_band_select').show();$('#mobilesearch_LTE_band_list_items').show();$('#mobilesearch_input_support_5G_switch_operate').show();$('#dhcp_mask').show();$('#mobilesearch_input_support_5G_switch_operate').show();$('#mobilesearch_network_mode_5G').show();$('#mobilesearch_btn_save_div').show();
+GM_addStyle ( `
+div#mobilesearch_LTE_band_select,
+div#mobilesearch_btn_save_div,
+#mobilesearch_input_support_5G_switch_operate,
+div#mobilesearch_network_mode_5G,
+div#mobilesearch_network_notes,
+div#mobilesearch_input_support_3G_switch_operate,
+div#mobilesearch_input_support_4G_switch_operate,
+div#apn_list_input_dns_operate,
+div#dhcp_dns,
+div#mobilesearch_LTE_band_list_items,
+div#dhcp_mask,
+div#apn_connection_mode,
+.eths-vlan.eth-sub-section,
+.eths-static.eth-sub-section,
+.eths-lan-only.eth-sub-section,
+div#eths-manual-mac,
+div#secondary_dns,
+div#wanspeed,
+div#dualntwk_ipv4,
+div#dualntwk_ipv6,
+div#dia_trace_maxhops_father,
+div#led_switch_content,
+div#ip_type,
+div#antenna_page,
+div#wifi_save_power_wrapper,
+div#wifi_save_power,
+div#wifiadv_atuoApti_div,
+div#LAN_LAN_Ping,
+div#statistics_daily_flow_switch {
+    display: block !important;
 }
-
-//--- Style our newly added elements using CSS.
-GM_addStyle ( multilineStr ( function () {/*!
-    #myButton {
-      position: fixed;
-      top: 2%;
-      left: 28px;
-      background: linear-gradient(90deg, #0c9 0, #09f);
-      font-size: 1.09375vw;
-      font-weight: 600;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 39.0625vw;
-      border: none;
-      text-shadow: 0.2px 0.2px 0.2px #000;
-      z-index: 999;
-    }
-*/} ) );
-
-function multilineStr (dummyFunc) {
-    var str = dummyFunc.toString ();
-    str     = str.replace (/^[^\/]+\/\*!?/, '') // Strip function () { /*!
-            .replace (/\s*\*\/\s*\}\s*$/, '')   // Strip */ }
-            .replace (/\/\/.+$/gm, '') // Double-slash comments wreck CSS. Strip them.
-            ;
-    return str;
+div#footer_copyright:after {
+    content: " | Modded By iN4sser";
 }
+` );
