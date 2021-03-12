@@ -5,12 +5,15 @@
 // @updateURL   https://github.com/iN4sser/Huawei-5G-CPE-Pro-2-Mod/raw/main/Huawei-5G-CPE-Pro-2-Mod.user.js
 // @downloadURL https://github.com/iN4sser/Huawei-5G-CPE-Pro-2-Mod/raw/main/Huawei-5G-CPE-Pro-2-Mod.user.js
 // @include     *://192.168.*.1/*
-// @version     1.3
+// @version     1.4
 // @author      iN4sser
 // @namespace   iN4sser
 // @grant       GM_addStyle
+// @require     https://code.jquery.com/jquery-3.6.0.min.js
 // @description This style is made to unlock some hidden features on the web page
 // ==/UserScript==
+
+// Styling/Unhiding Some Features 
 GM_addStyle ( `
 div#mobilesearch_LTE_band_select,
 div#mobilesearch_btn_save_div,
@@ -40,7 +43,11 @@ div#wifi_save_power_wrapper,
 div#wifi_save_power,
 div#wifiadv_atuoApti_div,
 div#LAN_LAN_Ping,
-div#statistics_daily_flow_switch {
+div#statistics_daily_flow_switch,
+div#wifiadv_2g_mode_div,
+div#wifiadv_2g_maxassociate_div,
+div#wifiadv_5g_mode_div,
+div#wifiadv_5g_maxassociate_div {
     display: block !important;
 }
 div#footer_copyright:after {
