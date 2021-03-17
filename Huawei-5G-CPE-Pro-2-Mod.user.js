@@ -5,7 +5,7 @@
 // @updateURL   https://github.com/iN4sser/Huawei-5G-CPE-Pro-2-Mod/raw/main/Huawei-5G-CPE-Pro-2-Mod.user.js
 // @downloadURL https://github.com/iN4sser/Huawei-5G-CPE-Pro-2-Mod/raw/main/Huawei-5G-CPE-Pro-2-Mod.user.js
 // @include     *://192.168.*.1/*
-// @version     1.5
+// @version     1.6
 // @author      iN4sser
 // @namespace   iN4sser
 // @grant       GM_addStyle
@@ -48,12 +48,16 @@ div#wifiadv_2g_mode_div,
 div#wifiadv_2g_maxassociate_div,
 div#wifiadv_5g_mode_div,
 div#wifiadv_5g_maxassociate_div,
+div#leftmenuarea, 
 div#mlog,
 div#calltrace,
 div#band,
 div#apklog,
 div#debugport {
     display: block !important;
+}
+div#rightpagearea{
+  float: right;
 }
 div#footer_copyright:after {
     content: " | Modded By iN4sser";
