@@ -1,1 +1,1 @@
-# Huawei-5G-CPE-Pro-2-Mod
+# Huawei-5G-CPE-HN5368X
