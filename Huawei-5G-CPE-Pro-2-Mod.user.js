@@ -5,7 +5,7 @@
 // @updateURL   https://github.com/iN4sser/Huawei-5G-CPE-Pro-2-Mod/raw/main/Huawei-5G-CPE-Pro-2-Mod.user.js
 // @downloadURL https://github.com/iN4sser/Huawei-5G-CPE-Pro-2-Mod/raw/main/Huawei-5G-CPE-Pro-2-Mod.user.js
 // @include     *://192.168.*.1/*
-// @version     1.7.2
+// @version     1.7.1
 // @author      iN4sser
 // @namespace   iN4sser
 // @grant       GM_addStyle
