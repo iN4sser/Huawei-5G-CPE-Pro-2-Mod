@@ -5,7 +5,7 @@
 // @updateURL   https://github.com/iN4sser/Huawei-5G-CPE-Pro-2-Mod/raw/main/Huawei-5G-CPE-Pro-2-Mod.user.js
 // @downloadURL https://github.com/iN4sser/Huawei-5G-CPE-Pro-2-Mod/raw/main/Huawei-5G-CPE-Pro-2-Mod.user.js
 // @include     *://192.168.*.1/*
-// @version     1.7
+// @version     1.7.1
 // @author      iN4sser
 // @namespace   iN4sser
 // @grant       GM_addStyle
@@ -23,6 +23,7 @@ div#mobilesearch_network_notes,
 div#mobilesearch_input_support_3G_switch_operate,
 div#mobilesearch_input_support_4G_switch_operate,
 div#apn_list_input_dns_operate,
+div#IDS_ethernet_dynamicip_manual_control_father,
 div#dhcp_dns,
 div#mobilesearch_LTE_band_list_items,
 div#dhcp_mask,
